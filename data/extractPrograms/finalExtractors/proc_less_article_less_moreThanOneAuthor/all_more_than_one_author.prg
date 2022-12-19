@@ -1,0 +1,1 @@
+.*$ $k$e$y$=$.$⊢{2}(\p{Upper}|\p{Lower}|\d)*$/$(\p{Upper}|\p{Lower}|\d|/)*⊣$(\[\m-=]|\[?-\M])*$>$<$a$u$t$h$o$r$>$(\p{Lower}| |\p{Upper}|\p{Punct}|-)*$<$/$a$u$t$h$o$r$>$<$a$u$t$h$o$r$>$(\p{Lower}| |\p{Upper}|\p{Punct}|-)*$<$/$a$u$t$h$o$r$>$(<$a$u$t$h$o$r$>$(\p{Lower}| |\p{Upper}|\p{Punct}|-)*$<$/$a$u$t$h$o$r$>)*$.*

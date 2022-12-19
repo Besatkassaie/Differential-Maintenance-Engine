@@ -1,0 +1,7 @@
+procFocs = /data/extractPrograms/finalExtractors/URLSOfFOCS2010/proc_FOCS_url_mz9pm.csp
+titledate = /data/extractPrograms/finalExtractors/URLSOfFOCS2010/titleByDate_small_0qAFZ.csp
+-
+r1 = π (2) titledate
+r2 = π (2,9) procFocs
+r3 =  r2 ⋈ r1
+r4 = π (9) r3

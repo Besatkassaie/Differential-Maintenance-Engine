@@ -1,0 +1,10 @@
+procd =/data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/proc_less_QnRfM.csp
+article= /data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/article_less_At43o.csp
+moreThAuth = /data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/all_more_than_one_author_1byiW.csp
+-
+r1 = π (2) moreThAuth
+r2 =  procd ⋈ r1
+r3 = article ⋈ r1
+r4 = π (4) r2
+r5 = π (4) r3
+r6 = r4 ∪ r5
