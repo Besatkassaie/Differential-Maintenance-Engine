@@ -1,6 +1,6 @@
 # Differential-Maintenance-Engine
 DME identifies updates that can be autonomously applied to extracted relations.  
-# LICENSE
+## LICENSE
 (C) Copyright 2022 Besat Kassaie <bkassaie@uwaterloo.ca>, All Rights Reserved.
 The bundle is released for academic purposes only, all other rights are reserved.
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
@@ -25,18 +25,21 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 5.  eVset-Automaton representations for Allen Intervals see [Allen Intervals](data/Allen_Interval)
 
 
-###Java program to evaluate the Jape rule on documents
+### Java program to evaluate the Jape rule on documents
 Steps:
-1. We used gate developer interface to create the gate application file: [extraction.gapp](main/gaterelated/extraction.gapp) follow the steps below:
+1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp) follow the steps below:
   1.1 creat a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
   1.2 add Annie Tokenizer to the pipeline as well as our Jape rule  
   1.3 save application state as "extraction.gapp" to load from the Java class
-  *note: steps can be done by coding.*
 
+  *NOTE: steps can be done by coding.*
 
-2. run class  [BatchProcessApp](main/gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
+2. run class  [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * -g "gate application file path"
   * -c "corpus path"
   * -o "output path to write results"
   * -l "log file path"
-*note: the time spent for extraction will be written in the log file.*
+
+*NOTE: the time spent for extraction will be written in the log file.*
+
+### Java program to split DBLP.xml into bibliographic documents
