@@ -5,12 +5,11 @@
 The bundle is released for academic purposes only, all other rights are reserved.
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 
-*remarks
-1. We are working on getting the permission to release some parts of the code, until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be released.
+##### Remarks
+1. We are working on getting the permission to release some parts of the code[^1], until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be released.
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
-[^1]: Morciano, A. (2017). Engineering a runtime system for AQL
 3. We have modified XML parser provided by [DBLP team](https://dblp.org/faq/How+to+parse+dblp+xml.html). The related license is in the body of the class.
-
+[^1]: Morciano, A. (2017). Engineering a runtime system for AQL
 ### Requirements
 1. Java SE 11
 2. Scala 2.11.2  
@@ -44,14 +43,14 @@ This bundle is provided "as is" with no warranties, and the author in not liable
    - *output path to store documents*
 
 #### Java program to evaluate the Jape rule on documents
-Steps:
-1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp)
+##### Requirements
+ * We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp)
    - create a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
    - add Annie Tokenizer to the pipeline as well as [the rule]((gaterelated/Data/Grammar/Article.jape))  
    - save application state as "extraction.gapp" to later load from the Java class[^2]
 
   [^2]:  the steps can be done by coding and without using Gate Developer Interface.
-
+##### Run Gate Extractor
 2. run class [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * *-g gate application file path*
   * *-c corpus path*
