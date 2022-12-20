@@ -20,6 +20,26 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 # Provided Files
 1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/finalExtractors)
 2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/Updates)
-3.  Only Jape rule "x.jape" along with its Gate application file
+3.  Only Jape rule ["x.jape"](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/Data/Grammar/Article.jape) along with its Gate application file: [extraction.gapp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/extraction.gapp)
 4.  Some example of the generate DBLP documents see [benchmark](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/DBLP/benchmark)
 5.  eVset-Automaton representations for Allen Intervals see [Allen Intervals](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/Allen_Interval)
+
+
+# applying Jape rules on documents
+
+Steps:
+
+1. We used gate developer interface to create the gate application file: [extraction.gapp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/extraction.gapp) follow the steps below:
+  1.1 creat a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
+  1.2 add Annie Tokenizer to the pipeline as well as our Jape rule  
+  1.3 save application state as "extraction.gapp" to load from the Java class
+  note that the steps can be done by coding.
+
+
+
+2. run java class java [BatchProcessApp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters: 
+-g "gate application file path"
+-c "corpus path"
+-o "output path to write results"
+-l "log file path"
+time spent for extraction will be written in the log file.
