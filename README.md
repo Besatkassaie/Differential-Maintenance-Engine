@@ -51,7 +51,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
   [^2]:  the steps can be done by coding and without using Gate Developer Interface.
 ##### Run Gate Extractor
-2. run class [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
+* run class [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * *-g gate application file path*
   * *-c corpus path*
   * *-o output path to write results*
