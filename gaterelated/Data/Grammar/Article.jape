@@ -1,0 +1,66 @@
+Phase: phase1
+Input: Token SpaceToken
+Options: control = Brill
+
+Macro: OpenTag_article
+({Token.string == "<"}{Token.string == "article"})
+
+Macro: OpenTag_author
+({Token.string == "<"}{Token.string == "author"}{Token.string == ">"})
+
+Macro: closeTag_author
+({Token.string == "<"}{Token.string == "/"}{Token.string == "author"}{Token.string == ">"})
+
+Macro: OpenTag_title
+({Token.string == "<"}{Token.string == "title"}{Token.string == ">"})
+
+Macro: closeTag_title
+({Token.string == "<"}{Token.string == "/"}{Token.string == "title"}{Token.string == ">"})
+
+Macro: OpenTag_pages
+({Token.string == "<"}{Token.string == "pages"}{Token.string == ">"})
+
+Macro: closeTag_pages
+({Token.string == "<"}{Token.string == "/"}{Token.string == "pages"}{Token.string == ">"})
+
+Macro: OpenTag_year
+({Token.string == "<"}{Token.string == "year"}{Token.string == ">"})
+
+Macro: closeTag_year
+({Token.string == "<"}{Token.string == "/"}{Token.string == "year"}{Token.string == ">"})
+
+Macro: OpenTag_volume
+({Token.string == "<"}{Token.string == "volume"}{Token.string == ">"})
+
+Macro: closeTag_volume
+({Token.string == "<"}{Token.string == "/"}{Token.string == "volume"}{Token.string == ">"})
+
+Macro: OpenTag_journal
+({Token.string == "<"}{Token.string == "journal"}{Token.string == ">"})
+
+Macro: closeTag_journal
+({Token.string == "<"}{Token.string == "/"}{Token.string == "journal"}{Token.string == ">"})
+
+Macro: OpenTag_number
+({Token.string == "<"}{Token.string == "number"}{Token.string == ">"})
+
+Macro: closeTag_number
+({Token.string == "<"}{Token.string == "/"}{Token.string == "number"}{Token.string == ">"})
+
+Macro: Key
+((({Token.kind == number}|{Token.kind == word})*{Token.string == "/"}({Token.kind == number}|{Token.kind == word})*)*)
+
+Macro: Date
+({Token.kind == number, Token.length == 4}{Token.string == "-"}{Token.kind == number,  Token.length == 2}{Token.string == "-"}{Token.kind == number,  Token.length == 2})
+
+Macro:Name
+(({Token.kind == word}|{SpaceToken.kind == space}|{Token.string == "-"}|{Token.kind == punctuation}|{Token.string == "."})*)
+
+Macro:Title
+(({Token.kind == word}|{SpaceToken.kind == space}|{Token.string == "-"}|{Token.kind == punctuation}|{Token.string == "/"}|{Token.string == ","}|{Token.string == "."})*)
+
+Macro: Page
+({Token.kind == number}{Token.string == "-"}{Token.kind == number})
+
+Rule: R1
+(({Token}|{SpaceToken})*(OpenTag_article){SpaceToken}{Token.string== "key"}{Token.string == "="}{Token.kind == punctuation}(Key):keyLabel{Token.kind == punctuation}{SpaceToken}{Token.string == "mdate"}{Token.string == "="}{Token.kind == punctuation}(Date):dateLabel{Token.kind == punctuation}{Token.string == ">"}((OpenTag_author)(Name)(closeTag_author))*(OpenTag_title)(Title):titleLabel(closeTag_title)(OpenTag_pages)(Page):pageLabel(closeTag_pages)(OpenTag_year)({Token.kind==number}):yearLabel(closeTag_year)(OpenTag_volume)({Token.kind==number}):volLabel(closeTag_volume)(OpenTag_journal)(Title)(closeTag_journal)(OpenTag_number)({Token.kind==number}({Token.string=="-"}{Token.kind==number})?):numLabel(closeTag_number)({Token}|{SpaceToken})*) -->:keyLabel.keyAtr= {rule=R1}, :dateLabel.dateAtr= {rule=R1},:titleLabel.titleAtr= {rule=R1}, :yearLabel.yearAtr= {rule=R1},:volLabel.volAtr= {rule=R1}, :numLabel.numberAtr= {rule=R1}

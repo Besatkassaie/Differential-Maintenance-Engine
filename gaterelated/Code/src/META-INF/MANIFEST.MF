@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Main-Class: cs.uwaterloo.BatchProcessApp
+Class-Path: poi-4.1.2.jar ant-1.10.9.jar jdom-1.1.3.jar jaxen-1.2.0.jar 
+ xpp3-1.1.4c.jar gate-asm-9.0.jar pdfbox-2.0.22.jar xmpcore-6.0.6.jar cu
+ rvesapi-1.06.jar fontbox-2.0.22.jar javax.inject-1.jar jaxb-api-2.3.1.j
+ ar jempbox-1.8.16.jar tika-core-1.25.jar xmlbeans-3.1.0.jar xstream-1.4
+ .15.jar gate-core-9.0.1.jar httpcore-4.4.13.jar jaxb-impl-2.3.3.jar nek
+ ohtml-1.9.17.jar poi-ooxml-4.1.2.jar stax2-api-3.1.4.jar commons-io-2.8
+ .0.jar commons-lang-2.6.jar joda-time-2.10.9.jar slf4j-api-1.7.30.jar S
+ parseBitSet-1.2.jar uribuilder-2.0.0.jar xercesImpl-2.9.1.jar httpclien
+ t-4.5.12.jar jaxb-core-2.3.0.1.jar maven-model-3.6.3.jar plexus-cipher-
+ 1.4.jar tika-parsers-1.25.jar commons-codec-1.11.jar commons-lang3-3.11
+ .jar java-getopt-1.0.13.jar logback-core-1.2.3.jar plexus-utils-3.2.1.j
+ ar storage-file-5.1.1.jar ant-launcher-1.10.9.jar bcmail-jdk15on-1.68.j
+ ar bcpkix-jdk15on-1.68.jar bcprov-jdk15on-1.68.jar commons-math3-3.6.1.
+ jar jackson-core-2.12.1.jar pdfbox-tools-2.0.22.jar maven-artifact-3.6.
+ 3.jar maven-settings-3.6.3.jar poi-scratchpad-4.1.2.jar commons-compres
+ s-1.19.jar httpcache4j-api-5.1.1.jar jcl-over-slf4j-1.7.30.jar logback-
+ classic-1.2.3.jar httpcache4j-core-5.1.1.jar jackson-databind-2.12.1.ja
+ r log4j-over-slf4j-1.7.30.jar poi-ooxml-schemas-4.1.2.jar commons-colle
+ ctions4-4.4.jar jakarta.activation-1.2.2.jar maven-resolver-api-1.6.1.j
+ ar maven-resolver-spi-1.6.1.jar wagon-provider-api-3.4.0.jar woodstox-c
+ ore-lgpl-4.4.1.jar flying-saucer-core-9.1.20.jar maven-model-builder-3.
+ 6.3.jar maven-resolver-impl-1.6.1.jar maven-resolver-util-1.6.1.jar met
+ adata-extractor-2.15.0.jar plexus-interpolation-1.25.jar plexus-sec-dis
+ patcher-1.4.jar jackson-annotations-2.12.1.jar jakarta.xml.bind-api-2.3
+ .3.jar javax.activation-api-1.2.0.jar maven-builder-support-3.6.3.jar m
+ aven-settings-builder-3.6.3.jar httpcache4j-storage-api-5.1.1.jar maven
+ -resolver-provider-3.6.3.jar org.eclipse.sisu.inject-0.3.4.jar plexus-c
+ ontainer-default-2.1.0.jar maven-repository-metadata-3.6.3.jar maven-re
+ solver-transport-file-1.6.1.jar maven-resolver-transport-http-1.6.1.jar
+  maven-resolver-connector-basic-1.6.1.jar maven-resolver-transport-wago
+ n-1.6.1.jar maven-resolver-transport-classpath-1.6.1.jar
+
