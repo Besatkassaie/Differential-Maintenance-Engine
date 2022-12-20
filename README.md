@@ -27,7 +27,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 1.  [Extractors](data/extractPrograms/finalExtractors) primitive and complex extractors used in experiments along with their ".csp" files.
 2.  [Updates](data/extractPrograms/Updates) update formulas "x.prg" along with their specifications "x.sp".
 3.  [Gate application](gaterelated/extraction.gapp) along with the Jape rule ["x.jape"](gaterelated/Data/Grammar/Article.jape).
-4.  [benchmark](data/DBLP/benchmark) samples of generated DBLP documents.
+4.  [Benchmark](data/DBLP/benchmark) samples of generated DBLP documents.
 5.  [Allen Intervals](data/Allen_Interval) eVset-Automaton representations for Allen Intervals.
 
 #### Java program to split DBLP.xml into bibliographic documents
