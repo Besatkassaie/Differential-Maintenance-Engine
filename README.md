@@ -1,13 +1,13 @@
 # Differential-Maintenance-Engine
-DME identifies updates that can be autonomously applied to extracted relations.  
+DME identifies updates that can be autonomously applied to extracted relations. We have developed a system in Scala that verifies an extraction program expressed as a core AQL query.  If the program passes the test, the extracted view content is updated by running a shift algorithm. If it does not pass the test the extractor needs to be  executed from scratch. Through experimentation,  we show the run-time overhead imposed by our verifier in practice. Also, we compare the run-time of differential maintenance of the extracted views and re-executing the extraction program. Our system is developed on top of the engine proposed and implemented by Marciano[^1].
 ## LICENSE
 (C) Copyright 2022 Besat Kassaie <bkassaie@uwaterloo.ca>, All Rights Reserved.
 The bundle is released for academic purposes only, all other rights are reserved.
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 *remarks
-1. We are working on getting the permission to release part of the code until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3,4,5, and 6 cannot be released. 
+1. We are working on getting the permission to release part of the code until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3,4,5, and 6 cannot be released.
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
-
+[^1]: Morciano, A. (2017). Engineering a runtime system for AQL
 ## Functionalities
 1. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
 2. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
@@ -30,9 +30,9 @@ Steps:
 1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp)
    - create a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
    - add Annie Tokenizer to the pipeline as well as our Jape rule  
-   - save application state as "extraction.gapp" to load from the Java class[^1]
+   - save application state as "extraction.gapp" to load from the Java class[^2]
 
-  [^1]:  the steps can be done by coding and without using Gate Developer Interface.
+  [^2]:  the steps can be done by coding and without using Gate Developer Interface.
 
 2. run class  [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * -g "gate application file path"
