@@ -9,12 +9,12 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 
 ## Functionalities
-1. Scala program to convert regular formulas "x.prg" to their corresponding  eVset-Automaton representation  "x.csp".
-2. Scala program to convert core AQL "x.aqls" to their corresponding  eVset-Automaton representation  "x.csp".
-3. Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant.
-4. Scala program to apply the shift function
-5. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
-6. Java program to split DBLP.xml into bibliographic documents
+1. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
+2. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
+3. Scala program to convert regular formulas "x.prg" to their corresponding  eVset-Automaton representation  "x.csp".
+4. Scala program to convert core AQL "x.aqls" to their corresponding  eVset-Automaton representation  "x.csp".
+5. Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant.
+6. Scala program to apply the shift function
 
 
 ## Provided data Files
@@ -27,12 +27,12 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
 ### Java program to evaluate the Jape rule on documents
 Steps:
-1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp) follow the steps below:
-  1.1 create a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
-  1.2 add Annie Tokenizer to the pipeline as well as our Jape rule  
-  1.3 save application state as "extraction.gapp" to load from the Java class
+1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp)
+   - create a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
+   - add Annie Tokenizer to the pipeline as well as our Jape rule  
+   - save application state as "extraction.gapp" to load from the Java class[^1]
 
-  *NOTE: steps can be done by coding.*
+  [^1]:  the steps can be done by coding and without using Gate Developer Interface.
 
 2. run class  [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * -g "gate application file path"
@@ -49,7 +49,7 @@ Steps:
    2. we wrote a program using source code provided by [DBLP team](https://dblp.org/src/mmdb-2019-04-29-sources.jar)
 
 #### create database
-  run class [createDocumentDB](?) with three parameters with no flag:
+  run class [createDocumentDB](DBLP_PrepData/src/createDocumentDB.java) with three parameters with no flag:
    - dblp xml file path
    - dblp dtd file path
    - output path to store documents
