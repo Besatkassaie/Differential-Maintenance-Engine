@@ -8,7 +8,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 1. A part of code belongs to ? and their own licensing
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 
-# Functionalities
+## Functionalities
 1. Scala program to convert regular formulas "x.prg" to their corresponding  eVset-Automaton representation  "x.csp".
 2. Scala program to convert core AQL "x.aqls" to their corresponding  eVset-Automaton representation  "x.csp".
 3. Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant.
@@ -17,29 +17,26 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 6. Java program to split DBLP.xml into bibliographic documents
 
 
-# Provided Files
-1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/finalExtractors)
-2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/Updates)
-3.  Only Jape rule ["x.jape"](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/Data/Grammar/Article.jape) along with its Gate application file: [extraction.gapp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/extraction.gapp)
-4.  Some example of the generate DBLP documents see [benchmark](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/DBLP/benchmark)
+## Provided data Files
+1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors](data/extractPrograms/finalExtractors)
+2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates](data/extractPrograms/Updates)
+3.  Only Jape rule ["x.jape"](gaterelated/Data/Grammar/Article.jape) along with its Gate application file: [extraction.gapp](gaterelated/extraction.gapp)
+4.  Some example of the generate DBLP documents see [benchmark](data/DBLP/benchmark)
 5.  eVset-Automaton representations for Allen Intervals see [Allen Intervals](data/Allen_Interval)
 
 
-# applying Jape rules on documents
-
+###Java program to evaluate the Jape rule on documents
 Steps:
-
-1. We used gate developer interface to create the gate application file: [extraction.gapp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/extraction.gapp) follow the steps below:
+1. We used gate developer interface to create the gate application file: [extraction.gapp](main/gaterelated/extraction.gapp) follow the steps below:
   1.1 creat a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
   1.2 add Annie Tokenizer to the pipeline as well as our Jape rule  
   1.3 save application state as "extraction.gapp" to load from the Java class
-  note that the steps can be done by coding.
+  *note: steps can be done by coding.*
 
 
-
-2. run java class java [BatchProcessApp](https://github.com/Besatkassaie/Differential-Maintenance-Engine/blob/main/gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
-  -g "gate application file path"
-  -c "corpus path"
-  -o "output path to write results"
-  -l "log file path"
-the time spent for extraction will be written in the log file.
+2. run class  [BatchProcessApp](main/gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
+  * -g "gate application file path"
+  * -c "corpus path"
+  * -o "output path to write results"
+  * -l "log file path"
+*note: the time spent for extraction will be written in the log file.*
