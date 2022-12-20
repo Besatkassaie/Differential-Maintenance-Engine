@@ -5,7 +5,7 @@ DME identifies updates that can be autonomously applied to extracted relations.
 The bundle is released for academic purposes only, all other rights are reserved.
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 *remarks
-1. A part of code belongs to ? and their own licensing
+1. We are working on getting the permission to release part of the code until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3,4,5, and 6 cannot be released. 
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 
 ## Functionalities
