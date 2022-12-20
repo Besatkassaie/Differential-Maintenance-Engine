@@ -17,7 +17,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 6. Scala program to apply the shift function
 
 
-## Provided data Files
+## Provided Data Files
 1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors](data/extractPrograms/finalExtractors)
 2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates](data/extractPrograms/Updates)
 3.  Only Jape rule ["x.jape"](gaterelated/Data/Grammar/Article.jape) along with its Gate application file: [extraction.gapp](gaterelated/extraction.gapp)
