@@ -18,8 +18,8 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
 
 # Provided Files
-1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors] (https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/finalExtractors)
-2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates] (https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/Updates)
+1.  Primitive and complex extractors used in experiments along with their ".csp" files [Extractors](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/finalExtractors)
+2.  Update formulas "x.prg" along with their specifications "x.sp" see [Updates](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/extractPrograms/Updates)
 3.  Only Jape rule "x.jape" along with its Gate application file
 4.  Some example of the generate DBLP documents see [benchmark](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/DBLP/benchmark)
 5.  eVset-Automaton representations for Allen Intervals see [Allen Intervals](https://github.com/Besatkassaie/Differential-Maintenance-Engine/tree/main/data/Allen_Interval)
