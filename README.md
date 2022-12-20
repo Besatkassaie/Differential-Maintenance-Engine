@@ -32,9 +32,9 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
 #### create database
   run class [createDocumentDB](DBLP_PrepData/src/createDocumentDB.java) with three parameters with no flag:
-   - dblp xml file path
-   - dblp dtd file path
-   - output path to store documents
+   - *dblp xml file path*
+   - *dblp dtd file path*
+   - *output path to store documents*
 
 ### Java program to evaluate the Jape rule on documents
 Steps:
@@ -46,9 +46,9 @@ Steps:
   [^2]:  the steps can be done by coding and without using Gate Developer Interface.
 
 2. run class  [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
-  * -g "gate application file path"
-  * -c "corpus path"
-  * -o "output path to write results"
-  * -l "log file path"
+  * -g *gate application file path*
+  * -c *corpus path*
+  * -o *output path to write results*
+  * -l *log file path*
 
 *NOTE: the time spent for extraction will be written in the log file.*
