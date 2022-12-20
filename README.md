@@ -34,7 +34,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
 ##### Requirements
    1. Download DBLP file [DBLP dblp-2022-10-02.xml.gz]( https://dblp.org/xml/release/).
-   2. Download library used in [DBLP team](https://dblp.org/src/mmdb-2019-04-29-sources.jar)
+   2. Download library used in [DBLP Source](https://dblp.org/src/mmdb-2019-04-29-sources.jar)
 
 ##### create database
   run class [createDocumentDB](DBLP_PrepData/src/createDocumentDB.java) with three parameters with no flag:
