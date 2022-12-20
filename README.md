@@ -28,7 +28,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ### Java program to evaluate the Jape rule on documents
 Steps:
 1. We used gate developer interface to create the gate application file: [extraction.gapp](gaterelated/extraction.gapp) follow the steps below:
-  1.1 creat a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
+  1.1 create a "corpus pipeline application" in [Gate Developer 9.0.1](https://gate.ac.uk/download/)
   1.2 add Annie Tokenizer to the pipeline as well as our Jape rule  
   1.3 save application state as "extraction.gapp" to load from the Java class
 
@@ -43,3 +43,13 @@ Steps:
 *NOTE: the time spent for extraction will be written in the log file.*
 
 ### Java program to split DBLP.xml into bibliographic documents
+
+#### prepration
+   1. To create a document database we split [DBLP dblp-2022-10-02.xml.gz]( https://dblp.org/xml/release/).
+   2. we wrote a program using source code provided by [DBLP team](https://dblp.org/src/mmdb-2019-04-29-sources.jar)
+
+#### create database
+  run class [createDocumentDB](?) with three parameters with no flag:
+   - dblp xml file path
+   - dblp dtd file path
+   - output path to store documents
