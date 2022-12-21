@@ -6,7 +6,7 @@ The bundle is released for academic purposes only, all other rights are reserved
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 
 ##### Remarks
-1. We are working on getting the permission to release some parts of the code[^1], until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be released.
+1. We are working on getting the permission to release some parts of the code[^1], until then code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be fully functional .
 2. We have adopted a Java class from Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 3. We have modified XML parser provided by [DBLP team](https://dblp.org/faq/How+to+parse+dblp+xml.html). The related license is in the body of the class.
 [^1]: Morciano, A. (2017). Engineering a runtime system for AQL
@@ -56,5 +56,23 @@ This bundle is provided "as is" with no warranties, and the author in not liable
   * *-c corpus path*
   * *-o output path to write results*
   * *-l log file path*
+
+#### Scala program to convert regular formulas to eVset-Automaton representation.
+* run class [ProgramManagement.scala](src/ca/uwaterloo/cs/util/ProgramManagement.scala) with two parameters with no flag:
+ - *program file x.prg path*
+ - *output directory path to store the eVset-Automaton representation*
+####  Scala program to verify an update formula w.r.t input extractors
+* run class [_psedu_regexpr.scala](src/_psedu_regexpr.scala) with 4 parameters
+- *update's .prg file path *
+- *update's specification's file path .sp*
+- *extractor .prg file path *
+- *X.txt file path*
+
+####  Scala program to apply the shift function
+* run class [ReadOutputFile.scala](src/ca/uwaterloo/cs/psupdate/ReadOutputFile.scala) with 4 parameters
+- *args(0) file path of update relation*
+- * args(1) file path of  extracted relation
+- * args(2) file path shifted extracted relation
+- * args(3) update's specification's file path .sp
 
 *NOTE: the time spent for the extraction is written in the log file.*
