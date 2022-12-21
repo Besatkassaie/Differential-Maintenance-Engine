@@ -17,7 +17,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ### Functionalities
 1. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
 2. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
-3. [Scala program to convert regular formulas ["x.prg"](data/extractPrograms/finalExtractors/proc_less/proc_less.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less/proc_less_QnRfM.csp)](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation)
+3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractPrograms/finalExtractors/proc_less/proc_less.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less/proc_less_QnRfM.csp)
 4. Scala program to convert core AQL ["x.aqls"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.aqls) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
 5. [Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-verify-an-update-formula-wrt-input-extractors)
 6. [Scala program to apply the shift function](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-apply-the-shift-function)
@@ -59,20 +59,20 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 
 #### Scala program to convert regular formulas to eVset-Automaton representation.
 * run class [ProgramManagement.scala](src/ca/uwaterloo/cs/util/ProgramManagement.scala) with two parameters with no flag:
- - *program file x.prg path*
- - *output directory path to store the eVset-Automaton representation*
+  - *program file x.prg path*
+  - *output directory path to store the eVset-Automaton representation*
 ####  Scala program to verify an update formula w.r.t input extractors
 * run class [_psedu_regexpr.scala](src/_psedu_regexpr.scala) with 4 parameters
-- *update's .prg file path *
-- *update's specification's file path .sp*
-- *extractor .prg file path *
-- *X.txt file path*
+  - *update's .prg file path*
+  - *update's specification's file path[ sample file](data/extractPrograms/Updates/DateFormat/dateFormat.sp)*
+  - *extractor .prg file path*
+  - *X.txt log file path*
 
 ####  Scala program to apply the shift function
 * run class [ReadOutputFile.scala](src/ca/uwaterloo/cs/psupdate/ReadOutputFile.scala) with 4 parameters
--  args(0) file path of update relation[sample file](data/extractPrograms/Updates/DateFormat/output_dateFormat_4l2Fp.txt)
--  args(1) file path of extracted relation [sample file](data/extractPrograms/finalExtractors/article_less/output_article_less_At43o.txt)
--  args(2) file path shifted extracted relation
--  args(3) update's specification's file path [sample file](data/extractPrograms/Updates/DateFormat/dateFormat.sp)
+  -  args(0) file path of update relation[ sample file](data/extractPrograms/Updates/DateFormat/output_dateFormat_4l2Fp.txt)
+  -  args(1) file path of extracted relation [ sample file](data/extractPrograms/finalExtractors/article_less/output_article_less_At43o.txt)
+  -  args(2) file path shifted extracted relation
+  -  args(3) update's specification's file path
 
 *NOTE: the time spent for the extraction is written in the log file.*
