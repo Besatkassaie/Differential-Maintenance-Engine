@@ -15,7 +15,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 2. Scala 2.11.2  
 
 ### Functionalities
-[1.](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)Java program to split DBLP.xml into bibliographic documents
+1. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
 2. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
 3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractPrograms/finalExtractors/proc_less/proc_less.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less/proc_less_QnRfM.csp)
 4. Scala program to convert core AQL ["x.aqls"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.aqls) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
