@@ -15,7 +15,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 2. Scala 2.11.2  
 
 ### Functionalities
-1. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
+[1.](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)Java program to split DBLP.xml into bibliographic documents
 2. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
 3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractPrograms/finalExtractors/proc_less/proc_less.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less/proc_less_QnRfM.csp)
 4. Scala program to convert core AQL ["x.aqls"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.aqls) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
@@ -26,7 +26,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ### Provided Data Files
 1.  [Extractors](data/extractPrograms/finalExtractors) primitive and complex extractors used in experiments along with their ".csp" files.
 2.  [Updates](data/extractPrograms/Updates) update formulas "x.prg" along with their specifications "x.sp".
-3.  [Gate application](gaterelated/extraction.gapp) along with the Jape rule ["x.jape"](gaterelated/Data/Grammar/Article.jape).
+3.  [Gate application](gaterelated/extraction.gapp) along with the Jape rule ["Article.jape"](gaterelated/Data/Grammar/Article.jape).
 4.  [Benchmark](data/DBLP/benchmark) samples of generated DBLP documents.
 5.  [Allen Intervals](data/Allen_Interval) eVset-Automaton representations for Allen Intervals.
 
