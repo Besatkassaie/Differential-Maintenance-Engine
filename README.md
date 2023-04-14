@@ -6,7 +6,8 @@ The bundle is released for academic purposes only, all other rights are reserved
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 
 ##### Remarks
-1. We are working to get the permission to release some parts of the code[^1] without which the code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be fully functional .
+1. We are working to get the permission to release some parts of the code[^1] without which the code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be fully functional.
+1. The runtime system designed by Morciano [^1] is available here: https://github.com/ae-mo/master-thesis/tree/master/project_sbt/arc
 2. We have adopted a Java class from the Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 3. We have modified XML parser provided by the [DBLP team](https://dblp.org/faq/How+to+parse+dblp+xml.html). The related license is in the body of the class.
 [^1]: Morciano, A. (2017). Engineering a runtime system for AQL

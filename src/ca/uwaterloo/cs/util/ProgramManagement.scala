@@ -29,7 +29,7 @@ object ProgramManagement {
   def main(args: Array[String]):Unit = {
 
     val start = java.lang.System.currentTimeMillis
-    val fw = new BufferedWriter(new FileWriter(args(3), true))
+    val fw = new BufferedWriter(new FileWriter(args(2), true))
 
     val programpath = args(0)
     val outputdirectory = args(1)
@@ -72,11 +72,13 @@ object ProgramManagement {
     var path_str=program_file.substring(0,split_from+1)
     var csp_file=path_str+filename
     var new_lines  = List[String]()
-    import scala.io.Source
 
-    val source = Source.fromFile(program_file, "UTF-8")
-    val lineIterator = source.getLines
-    val  expr_str = lineIterator.next()
+    import java.nio.charset.StandardCharsets
+    import java.nio.file.Files
+    import java.nio.file.Paths
+
+    val lines = Files.readAllLines(Paths.get(program_file), StandardCharsets.UTF_8)
+    val expr_str=lines.get(0)
     val path = exprToCSP(expr_str,filename+"_",outputDir)
 
       if(path == None) throw new Exception("could not create csp for extractor in program: "+program_file)

@@ -63,18 +63,27 @@ def applyshift(updateData:mutable.HashMap[String, mutable.HashSet[ArrayBuffer[(I
 
     while(line.matches(extractedSpans_Line_Pattern.regex) || (!line.matches(docName_Pattern.regex) && lineIterator.hasNext)) {
       if (line.matches(extractedSpans_Line_Pattern.regex)) {
+      //  println("Line: "+line)
+
+
         val list=extractedSpans_Pattern.findAllIn(line).toList
+        //println("list: "+list.toString())
+        var isupdated=false
         var tempArray=new ArrayBuffer[(Int , Int)]
         for (item <- list){
           val tokens=item.split(",")
           val first=tokens(0).substring(tokens(0).indexOf("(")+1).toInt
           val second=tokens(1).substring(0,tokens(1).indexOf(")")).toInt
           val tuple=(first,second)
-          tempArray+=shift(tuple,update_relation.get,U,UVarIndex)
-          numberofUpdatesRedords=numberofUpdatesRedords+1
+          var res=shift(tuple,update_relation.get,U,UVarIndex)
+           tempArray+=((res._1,res._2))
+
+          if (res._3) isupdated=true
+
 
         }
-
+        if (isupdated)
+        numberofUpdatesRedords=numberofUpdatesRedords+1
 
         var numberOftuples=tempArray.size
         var items=line.split(" ")
@@ -146,21 +155,26 @@ def applyshift(updateData:mutable.HashMap[String, mutable.HashSet[ArrayBuffer[(I
 
     val diff = stop - start
     var x = diff / 1000
+    var x2 = diff.toDouble / 1000
     val seconds = x % 60
     x /= 60
     val minutes = x % 60
     x /= 60
     val hours = x % 24
+    val msec=x2-(seconds+minutes*60+hours*3600)
 
-    val res = "" + hours + "h" + minutes + "m" + seconds + "s"
+
+    val res = "" + hours + "h" + minutes + "m" + seconds + "s" +msec+"msec"
 
     res
   }
 
 
-private def  shift(span:(Int,Int),Update_Relation:mutable.HashSet[ArrayBuffer[(Int , Int)]],U:String, UpdatevarIndex:Int):(Int,Int)={
+private def  shift(span:(Int,Int),Update_Relation:mutable.HashSet[ArrayBuffer[(Int , Int)]],U:String, UpdatevarIndex:Int):(Int,Int,Boolean)={
+  //println("shift called for"+span.toString())
   var shiftVal=0
   var l=0
+  var updated=false
   for (row <- Update_Relation){
     //get updatevar
      var(f,s)=row(UpdatevarIndex)
@@ -170,11 +184,12 @@ private def  shift(span:(Int,Int),Update_Relation:mutable.HashSet[ArrayBuffer[(I
        {
          l=computeLength(U,row)
          shiftVal=shiftVal+varlength-l
+         updated=true
        }
 
   }
 
-    (span._1-shiftVal,span._2-shiftVal)
+    (span._1-shiftVal,span._2-shiftVal,updated)
 }
 
 
@@ -192,7 +207,7 @@ private def computeLength(U:String,tupl:ArrayBuffer[(Int , Int)]): Int ={
     var data_map=new mutable.HashMap[String, mutable.HashSet[ArrayBuffer[(Int , Int)]]]
     import scala.io.Source
     var docname=""
-    val docName_Pattern = "(-+)((\\w|\\s|\\d|\\.)+\\.xml)(-+)".r
+    val docName_Pattern = "(?U)(-+)((\\w|-|\\s|'|\\d|\\.)+\\.xml)(-+)".r
     val endOfFile_Pattern = "\\*+.".r
     val extractedSpans_Pattern= "\\((\\d+),(\\d+)\\)".r
     val extractedSpans_Line_Pattern= "(\\((\\d+),(\\d+)\\)).+".r
@@ -207,6 +222,7 @@ private def computeLength(U:String,tupl:ArrayBuffer[(Int , Int)]): Int ={
         //get the first file name
         val filename_2=for (m <- docName_Pattern.findFirstMatchIn(line)) yield m.group(2)
         docname=filename_2.get
+        //println(docname)
       }
       line=lineIterator.next()
       while(line.matches(extractedSpans_Line_Pattern.regex) || (!line.matches(docName_Pattern.regex) && !line.matches(endOfFile_Pattern.regex))) {
@@ -276,4 +292,10 @@ private def computeLength(U:String,tupl:ArrayBuffer[(Int , Int)]): Int ={
     }
    val r= applyshift(update_match,replacementString,extractorMatchFile,uvar_index,extractorShiftedFile)
   }
+
+
+
+
+
+
 }

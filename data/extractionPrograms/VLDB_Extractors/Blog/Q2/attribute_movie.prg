@@ -1,0 +1,1 @@
+.*$ $⊢{2}(f$u$n$n$y|b$e$t$t$e$r|w$o$r$s$t|w$o$r$s$e|a$w$f$u$l|b$o$r$i$n$g|e$n$t$e$r$t$a$i$n$i$n$g|i$n$s$p$i$r$i$n$g|c$l$e$v$e$r|i$n$t$e$r$e$s$t$i$n$g|s$m$a$r$t|c$o$o$l|d$o$p$e|q$u$i$r$k$y|h$i$l$a$r$i$o$u$s|a$m$a$z$i$n$g|w$e$l$l$-$d$o$n$e|r$u$s$h$e$d)⊣$( |,)$(.~?~\.)*$ $⊢{3}(f$e$a$t$u$r$e|d$v$d|f$i$l$m|m$o$v$i$e|f$l$i$c$k)⊣$( |,)$.*

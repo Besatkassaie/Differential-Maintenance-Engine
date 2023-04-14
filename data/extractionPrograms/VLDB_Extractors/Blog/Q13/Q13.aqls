@@ -1,0 +1,4 @@
+q10 = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/Blog/Q10/action_title_attribute_mK5ye.csp
+q12 = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/Blog/Q12/sentiment_genre_movie_VXwBp.csp
+-
+r2 =  q10 ∪ q12

@@ -320,7 +320,7 @@ are disjoint.
       stop = java.lang.System.currentTimeMillis
       System.out.print("\n")
       System.out.print("****************************************************************************\n")
-      System.out.println("Time elapsed to limit g to the part that has been active for p: " + formatTime(start, stop) + ".")
+      System.out.println("Time elapsed to limit g to  the part that has been active for p: " + formatTime(start, stop) + ".")
       start = java.lang.System.currentTimeMillis
 
       E_i_prime=g_prime.create_post_update_automaton(g_prime,this.rs).⋈(p.to_eVSet()).get.π(E.V)

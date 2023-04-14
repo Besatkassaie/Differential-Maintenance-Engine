@@ -1,7 +1,0 @@
-the update specification is written in .sp file.
-.sp file  has the following format:
-
-
-Update variable
--
-Update string

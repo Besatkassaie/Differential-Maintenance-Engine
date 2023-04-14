@@ -131,14 +131,19 @@ diamond_str=diamond_str+"$"+ subexps_appended(varname)
 
 }
 
+if(diamond_str.length>0)  {
 if(diamond_str.charAt(0)=='$') {
-diamond_str=diamond_str.substring(1)
+diamond_str=diamond_str.substring(1)}
  //wrap with update variable
   diamond_str="⊢{"+this.updateVar +"}"+diamond_str+"⊣"
-println("diamond_str "+diamond_str)
+println("diamond_str "+diamond_str)}
+  else {
+  diamond_str="⊢{"+this.updateVar +"}"+"\\e"+"⊣"
 }
+
   new RegularFormula(diamond_str)
 }
+
 
 
 private def append_subexprs(subexps:scala.collection.mutable.Map[String, List[String]]):scala.collection.mutable.Map[String, String]={
@@ -343,7 +348,12 @@ object Update_Spec{
     var line = lineIterator.next()
     val updatevariable=line
     line = lineIterator.next() // has -
-    val replacment=lineIterator.next()
+    var replacment=""
+    if(lineIterator.hasNext){
+      //means that replacement string is not empty string
+      replacment=lineIterator.next()
+    }
+
     (updatevariable,replacment)
   }
   def getFormulaFromFile(file:String):RegularFormula={

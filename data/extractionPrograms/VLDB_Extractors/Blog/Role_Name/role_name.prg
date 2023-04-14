@@ -1,0 +1,1 @@
+.*$ $⊢{2}(p$r$o$t$a$g$o$n$i$s$t|c$h$a$r$a$c$t$e$r|d$i$r$e$c$t$o$r|a$c$t$o$r|r$o$l$e|c$h$a$r$a$c$t$e$r$s|c$r$i$t$i$c$s)⊣$( |,)$(.~?~\.)*$⊢{3}\p{Upper}$(\p{Lower})*$ $\p{Upper}$(\p{Lower})*$( |\p{Punct})⊣$.*

@@ -1,0 +1,4 @@
+s2010 = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/S2010/S2010_bJ_rz.csp
+smod= /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/SMod/SMod_6lxhk.csp
+-
+r2 =  s2010 ∪ smod

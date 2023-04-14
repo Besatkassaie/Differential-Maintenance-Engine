@@ -1,0 +1,6 @@
+q1 = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/Blog/Q1/action_title_WFS3N.csp
+q2 = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/Blog/Q2/attribute_movie_XpBFz.csp
+qrn = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/Blog/Role_Name/role_name_MqaoZ.csp
+-
+r2 =  q1 ∪ q2
+r3 =  r2 ∪ qrn

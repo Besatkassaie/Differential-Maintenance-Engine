@@ -1,0 +1,1 @@
+.*$"$>$<$a$u$t$h$o$r$>$⊢{3}\p{Upper}$(\p{Upper}|\p{Lower}| |(\.$ )|-)*⊣$<$/$a$u$t$h$o$r$>$(.~\n)*$<$b$o$o$k$t$i$t$l$e$>$⊢{9}(\p{Lower}| |\p{Upper}|\p{Punct}|-|\d)*$V$L$D$B$(\p{Lower}| |\p{Upper}|\p{Punct}|-|\d)*⊣$<$/$b$o$o$k$t$i$t$l$e$>$.*

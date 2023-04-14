@@ -1,0 +1,1 @@
+.*$<$t$i$t$l$e$>$⊢{4}(\p{Lower}| |\p{Upper}|\p{Punct}|-|\d)*⊣$<$/$t$i$t$l$e$>$<$p$a$g$e$s$>$⊢{5}(\d)*$-$(\d)*⊣$<$/$p$a$g$e$s$>$<$y$e$a$r$>$⊢{6}\d$\d$\d$\d⊣$<$/$y$e$a$r$>$<$v$o$l$u$m$e$>$⊢{7}(\d)*⊣$<$/$v$o$l$u$m$e$>$<$j$o$u$r$n$a$l$>$⊢{8}(\p{Lower}| |\p{Upper}|\p{Punct}|-|\d)*⊣$<$/$j$o$u$r$n$a$l$>$.*

@@ -1,5 +1,0 @@
-procd = /data/extractPrograms/finalExtractors/proc_less_2010/proc_less_QnRfM.csp
-titledate = /data/extractPrograms/finalExtractors/proc_less_2010/titleByDate_small_0qAFZ.csp
--
-r1 = π (2) titledate
-r2 =  procd ⋈ r1

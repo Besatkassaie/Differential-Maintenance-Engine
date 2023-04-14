@@ -1,1 +1,0 @@
-.*$<$b$o$o$k$t$i$t$l$e$>$⊢{1}F$o$u$n$d$a$t$i$o$n$s$ $o$f$ $C$o$m$p$u$t$e$r$ $S$c$i$e$n$c$e⊣$<$/$b$o$o$k$t$i$t$l$e$>$.*|.*$<$j$o$u$r$n$a$l$>$⊢{1}F$o$u$n$d$a$t$i$o$n$s$ $o$f$ $C$o$m$p$u$t$e$r$ $S$c$i$e$n$c$e⊣$<$/$j$o$u$r$n$a$l$>$.*

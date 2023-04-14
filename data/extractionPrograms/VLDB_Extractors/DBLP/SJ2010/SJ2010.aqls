@@ -1,0 +1,5 @@
+sjrn = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/SJrn/SJrn_HwzUi.csp
+s2010= /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/S2010/S2010_bJ_rz.csp
+-
+r2 =  sjrn ⋈ s2010
+r3 = π (8) r2

@@ -1,0 +1,4 @@
+svldb= /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/SVLDB/SVLDB_lxElO.csp
+saaplus = /u5/bkassaie/verifier/Verifier/data/extractPrograms/finalExtractors/VLDBExperiments/VLDBExtractors/DBLP/SAAPlus/SAAPlus_Of6ml.csp
+-
+r2 =  svldb ⋈ saaplus
