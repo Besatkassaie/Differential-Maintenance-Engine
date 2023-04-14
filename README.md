@@ -18,16 +18,16 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 1. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
 2. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
 3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractionPrograms/VLDB_Extractors/DBLP/S2010/S2010.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractionPrograms/VLDB_Extractors/DBLP/S2010/S2010_UQJXo.csp)
-4. Scala program to convert core AQL ["x.aqls"](data/extractionPrograms/VLDB_Extractors/DBLP/SVAAPlus/SVAAPlus.aqls) to their corresponding eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
+4. Scala program to convert core AQL ["x.aqls"](data/extractionPrograms/VLDB_Extractors/DBLP/SVAAPlus/SVAAPlus.aqls) to their corresponding eVset-Automaton representation  "x.csp".
 5. [Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-verify-an-update-formula-wrt-input-extractors)
 6. [Scala program to apply the shift function](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-apply-the-shift-function)
 
 
 ### Provided Data Files
-1.  [Extractors](data/extractPrograms/finalExtractors) primitive and complex extractors used in experiments along with their ".csp" files.
-2.  [Updates](data/extractPrograms/Updates) update formulas "x.prg" along with their specifications "x.sp".
+1.  [Extractors](data/extractionPrograms/VLDB_Extractors) primitive and complex extractors used in experiments along with their ".csp" files.
+2.  [Updates](data/extractionPrograms/VLDB_Updates/) update formulas "x.prg" along with their specifications "x.sp".
 3.  [Gate application](gaterelated/extraction.gapp) along with the Jape rule ["Article.jape"](gaterelated/Data/Grammar/Article.jape).
-4.  [Benchmark](data/DBLP/benchmark) samples of generated DBLP documents.
+4.  [Benchmark](data/) samples of DBLP and Blog documents.
 5.  [Allen Intervals](data/Allen_Interval) eVset-Automaton representations for Allen Intervals.
 6.  [Detailed VLDB Experimentation Results](data/results/) Excel file with detailed results of all experiments in the paper.
 
