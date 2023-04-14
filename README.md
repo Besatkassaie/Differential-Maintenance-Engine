@@ -65,15 +65,15 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ####  Scala program to verify an update formula w.r.t input extractors
 * run class [_psedu_regexpr.scala](src/_psedu_regexpr.scala) with 4 parameters
   - *update's .prg file path*
-  - *update's specification's file path[ sample file](data/extractPrograms/Updates/DateFormat/dateFormat.sp)*
+  - *update's specification's file path[ sample file](data/extractionPrograms/VLDB_Updates/Updates/dateFormat_dblp/)*
   - *extractor .prg file path*
   - *X.txt log file path*
 
 ####  Scala program to apply the shift function
 * run class [ReadOutputFile.scala](src/ca/uwaterloo/cs/psupdate/ReadOutputFile.scala) with 4 parameters
-  -  args(0) file path of update relation[ sample file](data/extractPrograms/Updates/DateFormat/output_dateFormat_4l2Fp.txt)
-  -  args(1) file path of extracted relation [ sample file](data/extractPrograms/finalExtractors/article_less/output_article_less_At43o.txt)
-  -  args(2) file path shifted extracted relation
+  -  args(0) file path of update relation[ sample file](data/extractionPrograms/VLDB_Updates/Updates/dateFormat_dblp/output_dateFormat_dblp_LcQct.txt)
+  -  args(1) file path of extracted relation [ sample file](data/extractionPrograms/VLDB_Extractors/DBLP/S2010/output_S2010_UQJXo.txt)
+  -  args(2) file path for created shifted extracted relation
   -  args(3) update's specification's file path
 
 *NOTE: the time spent for the extraction is written in log file.*
