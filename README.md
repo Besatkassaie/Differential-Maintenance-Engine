@@ -6,7 +6,6 @@ The bundle is released for academic purposes only, all other rights are reserved
 This bundle is provided "as is" with no warranties, and the author in not liable for any damages from its use.
 
 ##### Remarks
-1. We are working to get the permission to release some parts of the code[^1] without which the code related to [functionalities](https://github.com/Besatkassaie/Differential-Maintenance-Engine#functionalities) 3, 4, 5, and 6 cannot be fully functional.
 1. The runtime system designed by Morciano [^1] is available here: https://github.com/ae-mo/master-thesis/tree/master/project_sbt/arc
 2. We have adopted a Java class from the Gate code repository. The related license can be found here: https://gate.ac.uk/gate/licence.html
 3. We have modified XML parser provided by the [DBLP team](https://dblp.org/faq/How+to+parse+dblp+xml.html). The related license is in the body of the class.
@@ -18,8 +17,8 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ### Functionalities
 1. [Java program to split DBLP.xml into bibliographic documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-split-dblpxml-into-bibliographic-documents)
 2. [Java program to evaluate the Jape rule on documents](https://github.com/Besatkassaie/Differential-Maintenance-Engine#java-program-to-evaluate-the-jape-rule-on-documents)
-3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractPrograms/finalExtractors/proc_less/proc_less.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less/proc_less_QnRfM.csp)
-4. Scala program to convert core AQL ["x.aqls"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.aqls) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
+3. [Scala program to convert regular formulas](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-convert-regular-formulas-to-evset-automaton-representation) ["x.prg"](data/extractionPrograms/VLDB_Extractors/DBLP/S2010/S2010.prg) to their corresponding  eVset-Automaton representation  ["x.csp"](data/extractionPrograms/VLDB_Extractors/DBLP/S2010/S2010_UQJXo.csp)
+4. Scala program to convert core AQL ["x.aqls"](data/extractionPrograms/VLDB_Extractors/DBLP/SVAAPlus/SVAAPlus.aqls) to their corresponding eVset-Automaton representation  ["x.csp"](data/extractPrograms/finalExtractors/proc_less_article_less_moreThanOneAuthor/moreThOneAuthorProc_lessArcl_less.csp).
 5. [Scala program to verify an update formula w.r.t input extractors and to determine if the update is pseudo irrelevant](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-verify-an-update-formula-wrt-input-extractors)
 6. [Scala program to apply the shift function](https://github.com/Besatkassaie/Differential-Maintenance-Engine#scala-program-to-apply-the-shift-function)
 
@@ -30,6 +29,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 3.  [Gate application](gaterelated/extraction.gapp) along with the Jape rule ["Article.jape"](gaterelated/Data/Grammar/Article.jape).
 4.  [Benchmark](data/DBLP/benchmark) samples of generated DBLP documents.
 5.  [Allen Intervals](data/Allen_Interval) eVset-Automaton representations for Allen Intervals.
+6.  [Detailed VLDB Experimentation Results](data/results/) Excel file with detailed results of all experiments in the paper.
 
 #### Java program to split DBLP.xml into bibliographic documents
 
@@ -76,4 +76,4 @@ This bundle is provided "as is" with no warranties, and the author in not liable
   -  args(2) file path shifted extracted relation
   -  args(3) update's specification's file path
 
-*NOTE: the time spent for the extraction is written in the log file.*
+*NOTE: the time spent for the extraction is written in log file.*
