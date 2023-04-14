@@ -50,7 +50,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
    - add Annie Tokenizer to the pipeline as well as [the rule]((gaterelated/Data/Grammar/Article.jape))  
    - save application state as "extraction.gapp" to later load from the Java class[^2]
 
-  [^2]:  the steps can be done by coding and without using Gate Developer Interface.
+  [^2]:  The steps can be done by coding and without using Gate Developer Interface.
 ##### Run Gate Extractor
 * run class [BatchProcessApp](gaterelated/Code/src/cs/uwaterloo/BatchProcessApp.java) with following parameters:
   * *-g gate application file path*
@@ -76,4 +76,4 @@ This bundle is provided "as is" with no warranties, and the author in not liable
   -  args(2) file path for created shifted extracted relation
   -  args(3) update's specification's file path
 
-*NOTE: the time spent for the extraction is written in log file.*
+*NOTE: The time spent for the extraction is written in log file.*
