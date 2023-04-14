@@ -1,0 +1,75 @@
+-----------------------------Gustavo C. Frainer.xml-----------------------------
+
+(315,382)  Towards a high performance merge solution for large-scale Datasets. 
+
+
+
+-----------------------------Masakazu Endo.xml-----------------------------
+
+(352,453)  Photomask Data Prioritization Based on VLSI Design Intent and Its Utilization for Mask Manufacturing. 
+
+
+
+-----------------------------Arjun Arumbakkam.xml-----------------------------
+
+(2058,2101)  Constrained closed loop inverse kinematics. 
+(2535,2592)  A multi-modal architecture for human robot communication. 
+
+
+
+-----------------------------Yong-Zhong He.xml-----------------------------
+
+(272,333)  The Formal Model of DBMS Enforcing Multiple Security Polices. 
+(2738,2818)  A Fine Grained RBAC Model Supporting Flexible Administrative Separation of Duty. 
+
+
+
+-----------------------------sample.xml-----------------------------
+
+(3920,4026)  hackAIR: Towards Raising Awareness about Air Quality in Europe by Developing a Collective Online Platform. 
+
+
+
+-----------------------------Jianjun Wu 0001.xml-----------------------------
+
+(7276,7374)  Assessing the drought monitoring characteristic of timeseries NDVI indices in crop growing season. 
+(11062,11146)  Retrieval of Fuel Moisture Content from hyperspectral data via Partial Least Square. 
+(13399,13481)  Performance evaluation of spectral indices to estimate equivalent water thickness. 
+(15829,15942)  Estimation of vegetation Equivalent Water Thickness using hyperspectral data and partial least square regression. 
+(16487,16607)  Analysis of relationships among vegetation condition indices and multiple-time scale SPI of grassland in growing season. 
+
+
+
+-----------------------------José Javier Dolado.xml-----------------------------
+
+(10988,11046)  Applying the metro map to software development management. 
+(5736,5797)  Software Project Visualization Using Task Oriented Metaphors. 
+
+
+
+-----------------------------Jun Yoneyama.xml-----------------------------
+
+(13096,13179)  Output feedback control design for Takagi-Sugeno fuzzy bilinear time-delay systems. 
+(29418,29483)  Stabilization of Takagi-Sugeno fuzzy bilinear time-delay systems. 
+(2511,2585)  Guaranteed Cost Output Feedback Control of Fuzzy Systems via LMI Approach. 
+(21139,21197)  LMI approach to output feedback control for fuzzy systems. 
+
+
+
+-----------------------------Hua Wu.xml-----------------------------
+
+(19798,19840)  Downstep in high-low sequences in Chinese. 
+
+
+
+-----------------------------Anastasia Moumtzidou.xml-----------------------------
+
+(53283,53327)  VERGE: A video interactive retrieval engine. 
+(15539,15579)  ITI-CERTH participation to TRECVID 2010. 
+
+
+
+
+ 
+****************************************************************************
+Time elapsed: 0h0m3s.
