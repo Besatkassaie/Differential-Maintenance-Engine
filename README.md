@@ -65,7 +65,7 @@ This bundle is provided "as is" with no warranties, and the author in not liable
 ####  Scala program to verify an update formula w.r.t input extractors
 * run class [_psedu_regexpr.scala](src/_psedu_regexpr.scala) with 4 parameters
   - *update's .prg file path*
-  - *update's specification's file path[ sample file](data/extractionPrograms/VLDB_Updates/Updates/dateFormat_dblp/)*
+  - *update's specification's file path[ sample file](data/extractionPrograms/VLDB_Updates/Updates/dateFormat_dblp/dateFormat_dblp.sp)*
   - *extractor .prg file path*
   - *X.txt log file path*
 
